@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 10: Redução das Desigualdades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 10: Redução das Desigualdades</h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods10_image.jpg" alt="ODS 10 - Redução das Desigualdades">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Reduzir a desigualdade dentro dos países e entre eles</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>10.1:</strong>  Até 2030, progressivamente alcançar e sustentar o crescimento da renda dos 40% da população mais pobre a uma taxa maior que a média nacional.</li>
+                    <li><strong>10.2:</strong>  Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra.</li>
+                    <li><strong>10.3:</strong>   Garantir a igualdade de oportunidades e reduzir as desigualdades de resultados, inclusive por meio da eliminação de leis, políticas e práticas discriminatórias e da promoção de legislação, políticas e ações adequadas a este respeito.</li>
+                    <li><strong>10.4:</strong>  Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade.</li>
+                    <li><strong>10.5:</strong>   Melhorar a regulamentação e monitoramento dos mercados e instituições financeiras globais e fortalecer a implementação de tais regulamentações.</li>
+                    <li><strong>10.6:</strong>   Assegurar uma representação e voz mais forte dos países em desenvolvimento em tomadas de decisão nas instituições econômicas e financeiras internacionais globais, a fim de produzir instituições mais eficazes, críveis, responsáveis e legítimas.</li>
+                    <li><strong>10.7:</strong>   Facilitar a migração e a mobilidade ordenada, segura, regular e responsável das pessoas, inclusive por meio da implementação de políticas de migração planejadas e bem geridas.</li>
+                    <li><strong>10.a:</strong> Implementar o princípio do tratamento especial e diferenciado para países em desenvolvimento, em particular os países menos desenvolvidos, em conformidade com os acordos da OMC.</li>
+                    <li><strong>10.b:</strong>   Incentivar a assistência oficial ao desenvolvimento e fluxos financeiros, incluindo o investimento externo direto, para os Estados onde a necessidade é maior, em particular os países menos desenvolvidos, os países africanos, os pequenos Estados insulares em desenvolvimento e os países em desenvolvimento sem litoral, de acordo com seus planos e programas nacionais.</li>
+                    <li><strong>10.c:</strong>    Até 2030, reduzir para menos de 3% os custos de transação de remessas dos migrantes e eliminar os corredores de remessas com custos superiores a 5%.</li>
+                </ul>
+            </div>
+
+            <div class="ods-text" id="content-suggestions" style="display: none;">
+                <h2>Sugestões de Ação:</h2>
+                <ul>
+                    <li><strong>1-Sinalização urbana: </strong><br> Adaptação da sinalização urbana e de locais públicos com uso de informações de forma visual, tátil e sonora para que qualquer pessoa, independente da situação, consiga ir e vir nos locais públicos sem dificuldades.</li> 
+                    <li><strong>2-Atendimento ao público: </strong><br> Treinar e capacitar funcionários públicos e privados no desempenho de suas atribuições no que diz respeito ao atendimento às necessidades das pessoas com deficiência física e mental.</li> 
+                    <li><strong>3-Garantia de informações dos direitos: </strong><br>  Garantir à todas as pessoas, de acordo com suas especialidades, seus direitos em qualquer local público ou privado, e principalmente, conscientizar estas pessoas desses direitos que muitas vezes são desconhecidos.</li>
+                    <li><strong>4-Pontos de atenção na Reforma Urbana: </strong><br> Considerar, em qualquer intervenção de Reforma Urbana, uma estratégia de desenvolvimento priorizando bairros periféricos, buscando uma distribuição mais equilibrada entre "locais de trabalho" e "residência de trabalhadore(a)s", minimizando assim, a grande necessidade de deslocamento destes moradores. A ideia é realocar fatores/ equipamentos públicos e privados, como distritos empresariais, industriais, universidades e centros de formação, educação e cultura para locais acessíveis a toda a população, sem priorizar apenas bairros centrais que são muito distantes das zonas periféricas.</li>
+                    <li><strong>5-Parceria entre escolas públicas e privadas: </strong><br> Promover a cooperação entre escolas privadas e públicas, considerando o compartilhamento de tecnologia, bibliotecas, áreas comuns e conhecimento, além de promover a integração entre os alunos através de olimpíadas esportivas, educacionais, e outros eventos.</li>
+                    <li><strong>6-Incentivo de estágio para alunos da rede pública: </strong><br> Promover nas empresas e órgãos públicos, programas de estágio e menor aprendiz voltados para alunos das escolas públicas, aumentando assim a chance de alunos que possuem oportunidades de crescimento profissionais mais restritas a ingressarem em empresas que possam oferecer chances de carreiras com emprego formal, além de incentivar a diversidade nas empresas.</li>
+                    <li><strong>7-Programa de atendimento para refugiados: </strong><br> Nos municípios que possuem histórico de imigração de refugiados, criar programas que atendam esses cidadãos no quesito alimentação, abrigo, orientação e ajuda para formalização dos documentos no Brasil, além de oportunidades de emprego para os adultos e educação para as crianças.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+            <button class="toggle-btn" onclick="toggleContent()">Alternar para Sugestões</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 10: Redução das Desigualdades</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>

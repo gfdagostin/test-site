@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 14: Vida na Água</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 14:Vida na Água </h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods14_image.jpg" alt="ODS 14 - Vida na Água">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>14.1:</strong>  Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os tipos, especialmente a advinda de atividades terrestres, incluindo detritos marinhos e a poluição por nutrientes.</li>
+                    <li><strong>14.2:</strong>  Até 2020, gerir de forma sustentável e proteger os ecossistemas marinhos e costeiros para evitar impactos adversos significativos, inclusive por meio do reforço da sua capacidade de resiliência, e tomar medidas para a sua restauração, a fim de assegurar oceanos saudáveis e produtivos.</li>
+                    <li><strong>14.3:</strong>   Minimizar e enfrentar os impactos da acidificação dos oceanos, inclusive por meio do reforço da cooperação científica em todos os níveis.</li>
+                    <li><strong>14.4:</strong>  Até 2020, efetivamente regular a coleta, e acabar com a sobrepesca, ilegal, não reportada e não regulamentada e as práticas de pesca destrutivas, e implementar planos de gestão com base científica, para restaurar populações de peixes no menor tempo possível, pelo menos a níveis que possam produzir rendimento máximo sustentável, como determinado por suas características biológicas.</li>
+                    <li><strong>14.5:</strong>   Até 2020, conservar pelo menos 10% das zonas costeiras e marinhas, de acordo com a legislação nacional e internacional, e com base na melhor informação científica disponível.</li>
+                    <li><strong>14.6:</strong>   Até 2020, proibir certas formas de subsídios à pesca, que contribuem para a sobrecapacidade e a sobrepesca, e eliminar os subsídios que contribuam para a pesca ilegal, não reportada e não regulamentada, e abster-se de introduzir novos subsídios como estes, reconhecendo que o tratamento especial e diferenciado adequado e eficaz para os países em desenvolvimento e os países menos desenvolvidos deve ser parte integrante da negociação sobre subsídios à pesca da Organização Mundial do Comércio.</li>
+                    <li><strong>14.7:</strong> Até 2030, aumentar os benefícios econômicos para os pequenos Estados insulares em desenvolvimento e os países menos desenvolvidos, a partir do uso sustentável dos recursos marinhos, inclusive por meio de uma gestão sustentável da pesca, aquicultura e turismo.  </li>
+                    <li><strong>14.a:</strong>Aumentar o conhecimento científico, desenvolver capacidades de pesquisa e transferir tecnologia marinha, tendo em conta os critérios e orientações sobre a Transferência de Tecnologia Marinha da Comissão Oceanográfica Intergovernamental, a fim de melhorar a saúde dos oceanos e aumentar a contribuição da biodiversidade marinha para o desenvolvimento dos países em desenvolvimento, em particular os pequenos Estados insulares em desenvolvimento e os países menos desenvolvidos.</li>
+                    <li><strong>14.b:</strong>  Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos marinhos e mercados. </li>
+                    <li><strong>14.c:</strong>   Assegurar a conservação e o uso sustentável dos oceanos e seus recursos pela implementação do direito internacional, como refletido na UNCLOS [Convenção das Nações Unidas sobre o Direito do Mar], que provê o arcabouço legal para a conservação e utilização sustentável dos oceanos e dos seus recursos, conforme registrado no parágrafo 158 do “Futuro Que Queremos”. </li>
+                </ul>
+            </div>
+
+            
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 14: Vida na Água</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>

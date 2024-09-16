@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 16: Paz Justiça e Instituições Eficazes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 16: Paz Justiça e Instituições Eficazes</h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods16_image.jpg" alt="ODS 16 - Paz Justiça e Instituições Eficazes">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso á ustiça para todos e construir instituições eficazes, responsáveis e inclisivas em todos os níveis</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>16.1:</strong>  Reduzir significativamente todas as formas de violência e as taxas de mortalidade relacionada em todos os lugares.</li>
+                    <li><strong>16.2:</strong>  Acabar com abuso, exploração, tráfico e todas as formas de violência e tortura contra crianças.</li>
+                    <li><strong>16.3:</strong>   Promover o Estado de Direito, em nível nacional e internacional, e garantir a igualdade de acesso à justiça para todos.</li>
+                    <li><strong>16.4:</strong>  Até 2030, reduzir significativamente os fluxos financeiros e de armas ilegais, reforçar a recuperação e devolução de recursos roubados e combater todas as formas de crime organizado.</li>
+                    <li><strong>16.5:</strong>   Reduzir substancialmente a corrupção e o suborno em todas as suas formas.</li>
+                    <li><strong>16.6:</strong>   Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.</li>
+                    <li><strong>16.7:</strong>  Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis. </li>
+                    <li><strong>16.8:</strong>   Ampliar e fortalecer a participação dos países em desenvolvimento nas instituições de governança global.</li>
+                    <li><strong>16.9:</strong> Até 2030, fornecer identidade legal para todos, incluindo o registro de nascimento.  </li>
+                    <li><strong>16.10:</strong>   Assegurar o acesso público à informação e proteger as liberdades fundamentais, em conformidade com a legislação nacional e os acordos internacionais.</li>
+                    <li><strong>16.a:</strong> Fortalecer as instituições nacionais relevantes, inclusive por meio da cooperação internacional, para a construção de capacidades em todos os níveis, em particular nos países em desenvolvimento, para a prevenção da violência e o combate ao terrorismo e ao crime.</li>
+                    <li><strong>16.b:</strong>   Promover e fazer cumprir leis e políticas não discriminatórias para o desenvolvimento sustentável.</li>
+                </ul>
+            </div>
+
+            <div class="ods-text" id="content-suggestions" style="display: none;">
+                <h2>Sugestões de Ação:</h2>
+                <ul>
+                    <li><strong>1-Escola voluntária: </strong><br> Criar ações para que as escolas locais desenvolvam atividades voluntárias para a comunidade do entorno de acordo com as necessidades específica de cada região.</li> 
+                    <li><strong>2-Criação de Ouvidorias em bairros: </strong><br> Promover Ouvidorias locais em bairros para aproximar a população da gestão municipal, entregando assim, uma visão realista das necessidades da comunidade, além de permitir a troca de informações entre gestores e moradores.</li> 
+                    <li><strong>3-Portal do cidadão: </strong><br> Criar, e para os municípios que já possuem, atualizar constantemente, um Portal do Cidadão com acesso fácil, design responsivo e didático e com todas as informações necessárias para a inclusão e participação de toda a sociedade civil nas atividades da Prefeitura. </li>
+                    <li><strong>4-Divulgação do Plano Plurianual (PPA): </strong><br> Divulgar abertamente e de fácil entendimento, o PPA da atual gestão, incluindo assim, toda a população no planejamento do Município, além de permitir que cada cidadão seja um fiscal da efetividade e do cumprimento de todas as ações do Plano.</li>
+                    <li><strong>5-Núcleo de práticas jurídicas: </strong><br> Criação de um núcleo composto por alunos de direito do município e coordenado por um advogado, para resolução de casos pró bono, ou seja, em trabalho voluntário para o bem da população. A ideia é que o núcleo assessore juridicamente aqueles que não têm condições econômicas de arcar com os custos de um procedimento judicial, honorários de advogado e custas judiciais nas quatro áreas do Direito: civil, penal, de família, sucessões e trabalhista. Basta que estas pessoas comprovem sua impossibilidade financeira para serem atendidas e receberem a consultoria.</li>
+                    <li><strong>6-Promover a paz no trânsito: </strong><br> A paz no trânsito requer uma nova política de mobilidade que não dê privilégio ao automóvel e que reorganize os espaços para a defesa e manutenção da vida. O objetivo é gerar uma mobilidade sustentável, ou seja, um compromisso com estratégias e medidas destinadas a recuperar a qualidade do espaço urbano, favorecendo os meios de transporte público que consomem menos recursos naturais e provocam menos impactos ambientais, bem como os deslocamentos a pé e de bicicleta.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+            <button class="toggle-btn" onclick="toggleContent()">Alternar para Sugestões</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 16: Paz Justiça e Instituições Eficazes</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>

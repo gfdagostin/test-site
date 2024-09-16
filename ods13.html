@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 13: Ação Contra a Mudança Global do Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 13: Ação Contra a Mudança Global do Clima</h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods13_image.jpg" alt="ODS 13 - Ação Contra a Mudança Global do Clima">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Tornar medidas urgentes para combater a mudança climática e seus impactos(*)</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>13.1:</strong> Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em todos os países. </li>
+                    <li><strong>13.2:</strong>  Integrar medidas da mudança do clima nas políticas, estratégias e planejamentos nacionais.</li>
+                    <li><strong>13.3:</strong>   Melhorar a educação, aumentar a conscientização e a capacidade humana e institucional sobre mitigação, adaptação, redução de impacto e alerta precoce da mudança do clima.</li>
+                    <li><strong>13.a:</strong>   Implementar o compromisso assumido pelos países desenvolvidos partes da Convenção Quadro das Nações Unidas sobre Mudança do Clima [UNFCCC] para a meta de mobilizar conjuntamente US$ 100 bilhões por ano a partir de 2020, de todas as fontes, para atender às necessidades dos países em desenvolvimento, no contexto das ações de mitigação significativas e transparência na implementação; e operacionalizar plenamente o Fundo Verde para o Clima por meio de sua capitalização o mais cedo possível. </li>
+                    <li><strong>13.b:</strong>  Promover mecanismos para a criação de capacidades para o planejamento relacionado à mudança do clima e à gestão eficaz, nos países menos desenvolvidos, inclusive com foco em mulheres, jovens, comunidades locais e marginalizadas. </li>
+                    <li><strong>(*):</strong>    Reconhecendo que a Convenção Quadro das Nações Unidas sobre Mudança do Clima [UNFCCC] é o fórum internacional intergovernamental primário para negociar a resposta global à mudança do clima.</li>
+                </ul>
+            </div>
+
+            <div class="ods-text" id="content-suggestions" style="display: none;">
+                <h2>Sugestões de Ação:</h2>
+                <ul>
+                    <li><strong>1-Subsídios para iniciativas de permeabilidade do solo: </strong><br> Isentar uma taxa do IPTU para iniciativas de permeabilidade urbana, que visam promover a absorção da água da chuva pelo solo, diminuindo assim, a chance de enchentes e inundações</li> 
+                    <li><strong>2-Ampliar o plantio de árvores:  </strong><br>  Programa de doação de mudas de árvores para a população, facilitando o ato do plantio e ampliando a área verde da cidade, melhorando assim, o clima e seus impactos.</li> 
+                    <li><strong>3-Diminuição da emissão de gases através do transporte público: </strong><br>  Impedir que os ônibus municipais, estaduais ou privados, permaneçam parados com o motor ligado nos pontos finais, terminais ou rodoviárias da cidade, diminuindo assim, a emissão de poluentes. </li>
+                    <li><strong>4-Promoção do curso gratuito sobre mudanças climáticas: </strong><br> O Programa UN CC: Learn é a maior iniciativa de educação da ONU sobre mudança climática. O Curso Online Introdutório sobre Mudança Climática é gratuito, pode ser feito de acordo com a disponibilidade do usuário, e oferece informações claras, concisas e atualizadas para quem quer conhecer melhor o universo do assunto. Mais de 10 mil pessoas, de vários continentes, já fizeram o curso, que está disponível em cinco línguas. O programa de estudos e o curso podem ser acessados por meio do link www.unccelearn.org.</li>
+                    <li><strong>5-Disseminação dos conhecimentos sobre mudanças climáticas: </strong><br> Estimular fortemente professores, agentes da prefeitura e outros cargos que estão constantemente em contato com a população a realizarem o curso gratuito de mudanças climáticas oferecido pela ONU, para que, com a conclusão, possam disseminar o conhecimento de diversas formas que atinjam todos os níveis de entendimento da população, seja através de aulas, programas mais didáticos como teatros, ou até mesmo oficinas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+            <button class="toggle-btn" onclick="toggleContent()">Alternar para Sugestões</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 13: Ação Contra a Mudança Global do Clima</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 6: Água Potável e Saneamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 6: Água Potável e Saneamento</h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods6_image.jpg" alt="ODS 6 - Água Potável e Saneamento">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Assegurar a disponibilidade e gestão sustentável da água e saneamento para todos</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>6.1:</strong>  Até 2030, alcançar o acesso universal e equitativo a água potável e segura para todos. </li>
+                    <li><strong>6.2:</strong>  Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e meninas e daqueles em situação de vulnerabilidade.</li>
+                    <li><strong>6.3:</strong>   Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura globalmente. </li>
+                    <li><strong>6.4:</strong>  Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e reduzir substancialmente o número de pessoas que sofrem com a escassez de água.</li>
+                    <li><strong>6.5:</strong>   Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis, inclusive via cooperação transfronteiriça, conforme apropriado. </li>
+                    <li><strong>6.6:</strong> Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo montanhas, florestas, zonas úmidas, rios, aquíferos e lagos.</li>
+                    <li><strong>6.a:</strong>  Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as tecnologias de reuso. </li>
+                    <li><strong>6.b:</strong>   Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento. </li>
+                </ul>
+            </div>
+
+            <div class="ods-text" id="content-suggestions" style="display: none;">
+                <h2>Sugestões de Ação:</h2>
+                <ul>
+                    <li><strong>1-Metas para redução do uso da água: </strong><br> Estabelecer metas para a população reduzir o consumo médio de água por pessoa em cada domicílio, entregando benefícios para as metas atingidas, como descontos em impostos municipais, entre outros possíveis benefícios planejados pelo município.</li> 
+                    <li><strong>2-Mutirão para a despoluição de rios e córregos da cidade: </strong><br> Criar parceria com o Exército, Funasa e outras instituições para organização de um mutirão com toda a sociedade voluntária para a coleta de resíduos sólidos nos rios e córregos da cidade.</li> 
+                    <li><strong>3-Conscientização da população ribeirinha:  </strong><br>  Realizar palestras de conscientização ambiental para a população que reside em regiões próximas às represas, rios ou sistemas de abastecimento de água. </li>
+                    <li><strong>4-Instituir área verde mínima por habitação: </strong><br> Com o objetivo de aumentar a absorção de água e o tamanho da área verde no munícipio, melhorando a qualidade de vida e promovendo a consciência ambiental. </li>
+                    <li><strong>5-Campanha de troca de válvulas de descarga: </strong><br> Instituir incentivo fiscal e campanha motivacional para troca de válvulas de descargas antigas por modelos mais econômicos, incentivando o uso sustentável da água e a consciência ambiental em todas as residências.</li>
+                    <li><strong>6-Cisternas para captação de água da chuva em empresas e setor público: </strong><br>  Estimular a criação de cisternas para captação da água da chuva em empresas capitalizadas e setores públicos, com o objetivo de abastecer à população necessitada em caso de falta de água e catástrofes naturais.</li>
+                    <li><strong>7-Legislação municipal que permita o uso de técnicas alternativas: </strong><br> Alterar a legislação municipal para permitir coletas e tratamento de esgoto para uso próprio com técnicas alternativas como mini estações, wetlands, tratamento biológico, biodigestores, entre outros.</li>
+                    <li><strong>8-Fiscalização rigorosa em estabelecimentos comerciais: </strong><br> Fiscalizar as caixas de óleos e gorduras em estabelecimentos comerciais, além do tratamento do lixo para identificação de possíveis melhorias no processo que podem estar sendo prejudiciais ao meio ambiente.</li>
+                    <li><strong>9-Cursos para reuso da água: </strong><br> Proporcionar para toda a população, sem critério de seleção, cursos que ensinem e incentivem práticas de reuso da água e captação de águas pluviais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+            <button class="toggle-btn" onclick="toggleContent()">Alternar para Sugestões</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 6: Água Potável e Saneamento</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>

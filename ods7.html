@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 7: Energia Limpa e Acessível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ODS 7: Energia Limpa e Acessível</h1>
+    </header>
+
+    <main>
+        <section class="ods-detail">
+            <img src="images/ods7_image.jpg" alt="ODS 7 - Energia Limpa e Acessível">
+            <div class="ods-text" id="content-objectives">
+                <h2>Objetivo:</h2>
+                <p>Assegurar o acesso confiável, sustentável, moderno e a preço acessível á energia para todos</p>
+
+                <h2>Metas:</h2>
+                <ul>
+                    <li><strong>7.1:</strong>  Até 2030, assegurar o acesso universal, confiável, moderno e a preços acessíveis a serviços de energia.</li>
+                    <li><strong>7.2:</strong>  Até 2030, aumentar substancialmente a participação de energias renováveis na matriz energética global.</li>
+                    <li><strong>7.3:</strong>   Até 2030, dobrar a taxa global de melhoria da eficiência energética. </li>
+                    <li><strong>7.a:</strong> Até 2030, reforçar a cooperação internacional para facilitar o acesso a pesquisa e tecnologias de energia limpa, incluindo energias renováveis, eficiência energética e tecnologias de combustíveis fósseis avançadas e mais limpas, e promover o investimento em infraestrutura de energia e em tecnologias de energia limpa.</li>
+                    <li><strong>7.b:</strong>   Até 2030, expandir a infraestrutura e modernizar a tecnologia para o fornecimento de serviços de energia modernos e sustentáveis para todos nos países em desenvolvimento, particularmente nos países menos desenvolvidos, nos pequenos Estados insulares em desenvolvimento e nos países em desenvolvimento sem litoral, de acordo com seus respectivos programas de apoio.</li>
+                </ul>
+            </div>
+
+            <div class="ods-text" id="content-suggestions" style="display: none;">
+                <h2>Sugestões de Ação:</h2>
+                <ul>
+                    <li><strong>1-Metas para redução do uso de energia: </strong><br> Estabelecer metas para a população reduzir o consumo médio de energia por pessoa em cada domicílio, entregando benefícios para as metas atingidas, como descontos em impostos municipais, entre outros possíveis benefícios planejados pelo município.</li> 
+                    <li><strong>2-Incentivar o uso de energia solar: </strong><br> Incentivar e divulgar tecnologias acessíveis para uso de energia solar, mostrando para a polução que esta é uma prática possível e traz benefícios econômicos e ambientais.</li> 
+                    <li><strong>3-Implantar energia solar na iluminação pública: </strong><br>  Fazer o levantamento das fontes da energia consumida pelo município e incentivar a geração por fontes renováveis, como a energia solar.</li>
+                    <li><strong>4-Realizar parceria com a ONG Litro de Luz: </strong><br> a ONG leva luz até comunidades locais que não possuem acesso à energia elétrica ou que vivem sem luz em suas casas. Eles utilizam uma tecnologia simples, econômica e ecologicamente sustentável, composta por garrafas plásticas, painéis solares e lâmpadas de LED. Além da instalação, eles trabalham com iniciativas como workshops, voluntariado corporativo e ações específicas patrocinadas por parceiras. Tudo isso usando uma metodologia de Desenvolvimento Social que permite mapear as comunidades, entender necessidades, capacitar moradores e mobilizar voluntários para as ações.</li>
+                    <li><strong>5-Oficinas de energia limpa nas escolas: </strong><br>  Desenvolver nas escolas do município uma oficina que apresente os conceitos de energia limpa e ensine aos alunos maneiras fáceis e acessíveis para a criação de fontes de energias mais sustentáveis, com o objetivo de que esses alunos compartilhem o conhecimento com seus familiares e amigos, e sejam agentes das boas práticas relacionadas ao consumo de energia.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção dos botões -->
+        <div class="buttons-container">
+            <a href="index.html" class="back-link">Voltar para a página principal</a>
+            <button class="toggle-btn" onclick="toggleContent()">Alternar para Sugestões</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 - ODS 7: Energia Limpa e Acessível</p>
+    </footer>
+
+    <script>
+        let showingObjectives = true;
+
+        function toggleContent() {
+            const objectivesContent = document.getElementById('content-objectives');
+            const suggestionsContent = document.getElementById('content-suggestions');
+            const toggleButton = document.querySelector('.toggle-btn');
+
+            if (showingObjectives) {
+                objectivesContent.style.display = 'none';
+                suggestionsContent.style.display = 'block';
+                toggleButton.textContent = 'Alternar para Objetivos';
+            } else {
+                objectivesContent.style.display = 'block';
+                suggestionsContent.style.display = 'none';
+                toggleButton.textContent = 'Alternar para Sugestões';
+            }
+
+            showingObjectives = !showingObjectives;
+        }
+    </script>
+</body>
+</html>
